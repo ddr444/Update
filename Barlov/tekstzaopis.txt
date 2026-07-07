@@ -1,0 +1,3 @@
+-Prilagodba za dvojono iskazivanje cijena u EUR/kn
+-ispravljenje manje greške 
+
