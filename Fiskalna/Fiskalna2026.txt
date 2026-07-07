@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <section name="WindowsApplication1.My.MySettings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+    </sectionGroup>
+    <!-- For more information on Entity Framework configuration, visit http://go.microsoft.com/fwlink/?LinkID=237468 -->
+    <section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+  </configSections>
+  <appSettings>
+    <add key="cerificatePassword" value="Er1234" />
+    <!--DEMO-->
+    <add key="dnsIdentity" value="e-invoice" />
+    <!--PRODUKCIJA-->
+    <!--<add key="dnsIdentity" value="e-raèun"/>-->
+    <add key="ClientSettingsProvider.ServiceUri" value="" />
+  </appSettings>
+  <connectionStrings>
+    <add name="WindowsApplication1.My.MySettings.B2BConnectionString"
+      connectionString="Data Source=.\sqlexpress;Initial Catalog=B2B2026;Integrated Security=True"
+      providerName="System.Data.SqlClient" />
+    <add name="WindowsApplication1.My.MySettings.B2BConnectionString2"
+      connectionString="Data Source=.\sqlexpress;Initial Catalog=B2B2026;Integrated Security=True"
+      providerName="System.Data.SqlClient" />
+    <add name="B2B2019Entities" connectionString="metadata=res://*/fika2019.csdl|res://*/fika2019.ssdl|res://*/fika2019.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=.\sqlexpress;initial catalog=B2B2021;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;"
+      providerName="System.Data.EntityClient" />
+    <add name="B2B2020Entities" connectionString="metadata=res://*/FikaEntites.csdl|res://*/FikaEntites.ssdl|res://*/FikaEntites.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=.\sqlexpress;initial catalog=B2B2026;integrated security=True;multipleactiveresultsets=True;application name=EntityFramework&quot;"
+      providerName="System.Data.EntityClient" />
+  </connectionStrings>
+  <system.diagnostics>
+    <sources>
+      <!-- This section defines the logging configuration for My.Application.Log -->
+      <source name="DefaultSource" switchName="DefaultSwitch">
+        <listeners>
+          <add name="FileLog" />
+          <!-- Uncomment the below section to write to the Application Event Log -->
+          <!--<add name="EventLog"/>-->
+        </listeners>
+      </source>
+    </sources>
+    <switches>
+      <add name="DefaultSwitch" value="Information" />
+    </switches>
+    <sharedListeners>
+      <add name="FileLog" type="Microsoft.VisualBasic.Logging.FileLogTraceListener, Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" initializeData="FileLogWriter" />
+      <!-- Uncomment the below section and replace APPLICATION_NAME with the name of your application to write to the Application Event Log -->
+      <!--<add name="EventLog" type="System.Diagnostics.EventLogTraceListener" initializeData="APPLICATION_NAME"/> -->
+    </sharedListeners>
+  </system.diagnostics>
+  <userSettings>
+    <WindowsApplication1.My.MySettings>
+      <setting name="ImeForme" serializeAs="String">
+        <value>prazno</value>
+      </setting>
+      <setting name="RedUGridu" serializeAs="String">
+        <value>0</value>
+      </setting>
+      <setting name="God" serializeAs="String">
+        <value>2026</value>
+      </setting>
+      <setting name="PoslovniProstor" serializeAs="String">
+        <value>prazno</value>
+      </setting>
+      <setting name="Naplatni" serializeAs="String">
+        <value>1</value>
+      </setting>
+      <setting name="SifraBlagajnik" serializeAs="String">
+        <value>prazno</value>
+      </setting>
+      <setting name="OIBBlagajnik" serializeAs="String">
+        <value>prazno</value>
+      </setting>
+      <setting name="PathCertifikat" serializeAs="String">
+        <value>prazno</value>
+      </setting>
+      <setting name="OIB" serializeAs="String">
+        <value>prazno</value>
+      </setting>
+      <setting name="PassCertifikat" serializeAs="String">
+        <value>prazno</value>
+      </setting>
+      <setting name="Prijavi" serializeAs="String">
+        <value>False</value>
+      </setting>
+      <setting name="FormaBoja" serializeAs="String">
+        <value>GradientInactiveCaption</value>
+      </setting>
+      <setting name="ZagVirRn" serializeAs="String">
+        <value>True</value>
+      </setting>
+      <setting name="DrugaBoja" serializeAs="String">
+        <value>InactiveBorder</value>
+      </setting>
+      <setting name="Ispis" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="Done" serializeAs="String">
+        <value>False</value>
+      </setting>
+      <setting name="RbPoSifri" serializeAs="String">
+        <value>True</value>
+      </setting>
+      <setting name="RbPoNazivu" serializeAs="String">
+        <value>False</value>
+      </setting>
+      <setting name="RbPocinjeSa" serializeAs="String">
+        <value>True</value>
+      </setting>
+    </WindowsApplication1.My.MySettings>
+  </userSettings>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
+  </startup>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Raverus.FiskalizacijaDEV" publicKeyToken="5483B372E7C94269" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-2.0.4729.31225" newVersion="2.0.4729.31225" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.SqlServer.Types" publicKeyToken="89845dcd8080cc91" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-14.0.0.0" newVersion="14.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.ReportViewer.DataVisualization" publicKeyToken="89845dcd8080cc91" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-15.0.0.0" newVersion="15.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.ReportViewer.Common" publicKeyToken="89845dcd8080cc91" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-11.0.0.0" newVersion="11.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Raverus.FiskalizacijaDEV" publicKeyToken="5483b372e7c94269" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-3.2.0.0" newVersion="3.2.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+  <entityFramework>
+    <defaultConnectionFactory type="System.Data.Entity.Infrastructure.SqlConnectionFactory, EntityFramework" />
+    <providers>
+      <provider invariantName="System.Data.SqlClient" type="System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer" />
+    </providers>
+  </entityFramework>
+  <system.web>
+    <membership defaultProvider="ClientAuthenticationMembershipProvider">
+      <providers>
+        <add name="ClientAuthenticationMembershipProvider" type="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" />
+      </providers>
+    </membership>
+    <roleManager defaultProvider="ClientRoleProvider" enabled="true">
+      <providers>
+        <add name="ClientRoleProvider" type="System.Web.ClientServices.Providers.ClientRoleProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" cacheTimeout="86400" />
+      </providers>
+    </roleManager>
+  </system.web>
+</configuration>
